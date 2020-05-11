@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="<?php echo base_url(); ?>">Inicio</a>
+    <a class="navbar-brand" href="<?php echo base_url(); ?>panel">Inicio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,6 +10,7 @@
                     <?php echo $this->session->userdata('usuario'); ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="<?php echo base_url(); ?>panel_checador">Checadores</a>  
                     <a class="dropdown-item" href="<?php echo base_url(); ?>ingresos">Ingresos</a>  
                     <a class="dropdown-item" href="<?php echo base_url(); ?>panel_usuarios">Usarios</a>
                     <div class="dropdown-divider"></div>

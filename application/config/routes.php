@@ -49,18 +49,39 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Panel_principal';
+//$route['default_controller'] = 'Panel_principal';
+
+$route['default_controller'] = 'Panel_calendario';
 $route['404_override'] = 'Validar/error_404';
 $route['translate_uri_dashes'] = FALSE;
 
 
+/*
+  | -------------------------------------------------------------------------
+  | VALIDAR INGREOS SISTEMA
+  | ------------------------------------------------------------------------
+ */
 $route['ingreso'] = 'Validar/londing';
 $route['logout'] = 'Validar/logout';
 $route['bad_user'] = 'Validar/bad_user';
 
-$route['panel'] = 'Validar/londing';
 
 
 
 
+/*
+  | -------------------------------------------------------------------------
+  | PANEL ADMINISTRACION
+  | ------------------------------------------------------------------------
+ */
+$route['panel'] = 'Panel_principal/panel';
+
+
+
+
+/*
+  | -------------------------------------------------------------------------
+  | MODULOS ADMINISTRACION
+  | ------------------------------------------------------------------------
+ */
 $route['ingresos']='Panel_usuarios/ingresos';

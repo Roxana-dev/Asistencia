@@ -35,7 +35,7 @@ class Usuarios_model extends CI_Model {
                         //HISTORIAL INGRESOS
                        $this->historial_ingresos($consulta->id);
 
-                        redirect(base_url());
+                        redirect(panel);
                     } else {
                         redirect(bad_user);
                     }
