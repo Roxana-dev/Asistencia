@@ -39,9 +39,6 @@ class panel_checador extends CI_Controller
     }
 
 
-
-
-
     //ELEMENTOS BLOQUEADOS EN LA TABLA
     function bloque_elementos_tabla($crud)
     {
